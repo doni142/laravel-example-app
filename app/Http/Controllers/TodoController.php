@@ -25,7 +25,8 @@ class TodoController extends Controller
      */
     public function create()
     {
-        return view('todo_create');    }
+        return view('todo_create'); 
+    }
 
     /**
      * Store a newly created resource in storage.
