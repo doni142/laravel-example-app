@@ -26,5 +26,6 @@ Route::get('/sajat', function (\Illuminate\Http\Request $request) {
 
 Route::get('/enyem', [\App\Http\Controllers\Teszt::class, 'show']);
 Route::resource('todos', \App\Http\Controllers\TodoController::class);
+Route::resource('telefonkonyv', \App\Http\Controllers\TelefonkonyvController::class);
+Route::resource('bevasarlolista', \App\Http\Controllers\BevasarlolistaController::class);
 
-Route::get('/telefonkonyv', [\App\Models\telefonkonyv::class, 'show']);
