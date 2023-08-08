@@ -1,3 +1,5 @@
+@extends('layout')
+@section('contend')
 <form action="/todos/{{ $todo->id }}" method="post">
     @csrf
     @method('PUT')
@@ -5,3 +7,4 @@
     <input type="submit" value="mentés">
 </form>
 @error('title') {{$message}} @enderror
+@endsection

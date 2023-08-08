@@ -1,3 +1,5 @@
+@extends('layout')
+@section('contend')
 Ez az view az enyém: kutya:
 @foreach($csinald as $todo)
     <p> this is todo: {{ $todo->id }}, {{ $todo->title }}
@@ -10,5 +12,4 @@ Ez az view az enyém: kutya:
     </p>
 @endforeach
         <a href="/todos/create">Új hozzáadása </a>
-
-
+@endsection
